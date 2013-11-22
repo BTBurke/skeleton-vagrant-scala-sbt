@@ -11,6 +11,9 @@ Notes:
 
 1. This is set up for a basic Scala project on Ubuntu with a base box name "precise64"
 2. If you clone this, you have to go in and make a lot of changes to build.sbt.  You can also use g8 with BTBurke/sbt.g8 to set up a new build.sbt with your info.
+3. Technical Details:
+ - Installs Oracle Java 7
+ - Installs Scala 2.10.3 and SBT 0.13.0 (you can change this by specifying other version numbers in the vars section at the top of vagrant.yaml)
 
 See others in the series!
 

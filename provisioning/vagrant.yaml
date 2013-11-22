@@ -12,6 +12,11 @@
     - name: Update all packages
       apt: upgrade=dist
    
+   ###########################################################################################################################################
+   # For ORACLE JAVA 7:
+   # These steps are required to get the Oracle version of Java installed.  If you want OpenJDK instead, comment out these tasks and uncomment
+   # the one in the OpenJDK section
+   ###########################################################################################################################################
     - name: Install PyCurl (required for apt-repository updates)
       apt: pkg=python-pycurl    
 
@@ -23,6 +28,12 @@
 
     - name: Install Oracle Java 7
       apt: pkg=oracle-java7-installer
+    ##########################################################################################################################################
+    # For OpenJDK:
+    ##########################################################################################################################################
+    # - name: Install OpenJDK 7
+    #   apt: pkg=openjdk-7-jdk
+    ########################################################################################################################################## 
 
     - name: Create Ansible Cache Directory
       file: path=/var/local/ansible-cache state=directory 
