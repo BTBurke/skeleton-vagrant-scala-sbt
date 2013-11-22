@@ -1,5 +1,5 @@
-Skeleton - Vagrant + Ansible + Scala + SBT
-===
+## Skeleton - Vagrant + Ansible + Scala + SBT
+
 
 This is another installment in my multi-part series of project skeletons.  This one sets you up for a generic Scala development environment using Vagrant + Ansible.  It includes:
 
