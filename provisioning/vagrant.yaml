@@ -1,0 +1,32 @@
+---
+- hosts: vagrant
+  user: vagrant
+  sudo: yes
+  tasks: 
+    - name: Update apt cache
+      apt: update-cache=yes
+
+    - name: Update all packages
+      apt: upgrade=dist
+    
+    - name: Ensure pip is installed
+      apt: pkg=python-pip state=latest
+    
+    - name: Ensure pre-requisites for compiling extensions are installed
+      apt: pkg=build-essential state=latest
+    
+    - name: Install python development headers
+      apt: pkg=python-dev state=latest
+
+    - name: Install libyaml
+      apt: pkg=libyaml-dev state=latest
+
+    - name: Install pyyaml
+      pip: name=pyyaml
+
+    - name: Install pytest
+      pip: name=pytest
+
+    - name: Update python path
+      sudo: no
+      lineinfile: line="export PYTHONPATH=$PYTHONPATH:/vagrant" dest="~/.bashrc" state=present regexp="export PYTHONPATH=$PYTHONPATH:/vagrant"
