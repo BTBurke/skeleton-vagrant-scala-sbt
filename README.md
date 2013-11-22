@@ -16,10 +16,3 @@ Notes:
    * You can use OpenJDK instead by making a small change to vagrant.yaml.  Instructions in the file.
  - Installs Scala 2.10.3 and SBT 0.13.0 
    * You can change this by specifying other version numbers in the vars section at the top of vagrant.yaml
-
-See others in the series!
-
-* For you frontend people - [Skeleton-Angular-D3-Bootstrap-Yeoman](https://github.com/BTBurke/skeleton-angular-d3-bootstrap-yeoman) with CoffeeScript and a bunch of other whizbang excitement
-
-* For Pythonistas - [Skeleton-Vagrant-Ansible](https://github.com/BTBurke/skeleton-vagrant-ansible)
-
