@@ -44,6 +44,16 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # backing providers for Vagrant. These expose provider-specific options.
   # Example for VirtualBox:
   #
+  
+  # Change some default options for better experience, up memory and change VM name
+  config.vm.provider :virtualbox do |vb|
+
+    # Sets VM name equal to the parent directory + millis when started
+    vb.name = Dir.pwd().split("/")[-1] + "-" + Time.now.to_f.to_i.to_s
+    vb.customize ["modifyvm", :id, "--memory", "4096"]
+  end
+  
+
   # config.vm.provider :virtualbox do |vb|
   #   # Don't boot with headless mode
   #   vb.gui = true

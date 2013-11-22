@@ -16,3 +16,4 @@ Notes:
    * You can use OpenJDK instead by making a small change to vagrant.yaml.  Instructions in the file.
  - Installs Scala 2.10.3 and SBT 0.13.0 
    * You can change this by specifying other version numbers in the vars section at the top of vagrant.yaml
+ - Ups the default VM memory from 384MB to 4GB.  You can change this in the Vagrantfile.
