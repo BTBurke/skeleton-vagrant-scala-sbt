@@ -25,4 +25,4 @@ Notes:
 
 ##### Ansible seems to be provisioning a new VM but scala isn't installed
 
- - This can happen when you have multiple VMs running.  Anisble identifies by IP address, so if you have multiple machines running on 127.0.0.1, it can't tell the difference.  You should destroy the other VMs if you don't need them.  Alternatively, you can run the new VM on a different IP address.
+ - This can happen when you have multiple VMs running.  Anisble identifies by IP address, so if you have multiple machines running on 127.0.0.1, it can't tell the difference.  You should halt the other VMs if you don't need them.  Alternatively, you can run the new VM on a different IP address.
