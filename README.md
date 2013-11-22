@@ -1,11 +1,11 @@
 Skeleton - Vagrant + Ansible + Scala + SBT
 ===
 
-This is another installment in my multi-part series of project skeletons.  This one sets you up for a generic Vagrant + Ansible development environment for a Scala project.  It includes:
+This is another installment in my multi-part series of project skeletons.  This one sets you up for a generic Scala development environment using Vagrant + Ansible.  It includes:
 
-* An amazing Vagrantfile that will cue up Anisble for devops goodness and get you Scala and SBT installed for you
+* An amazing Vagrantfile that will cue up Anisble for provisioning goodness
 * An Ansible inventory file that works with a stock Vagrant set up
-* A vagrant.yaml file that contains the tasks you want to execute on vagrant up
+* A vagrant.yaml file that contains the tasks to install Scala and SBT (including Java)
 
 Notes:
 
